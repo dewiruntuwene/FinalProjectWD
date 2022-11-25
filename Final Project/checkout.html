@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- My Style-->
+    <link rel="stylesheet" href="css3.css">
+
+    <!-- Logo Title Bar-->
+    <link rel="icon" href="Logo.png" type="image/x-icon">
+
+    <title>Checkout</title>
+  </head>
+  <body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-#CA170C">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="Logo.png" alt="" width="30" class="d-inline-block align-text-top">
+          cabo.id</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">KIDS</a>
+              </li>
+              <li class="nav-item mx-7">
+                <a class="nav-link active" aria-current="page" href="#">WOMEN</a>
+              </li>
+              <li class="nav-item mx-7">
+                <a class="nav-link active" aria-current="page" href="#">MEN</a>
+              </li>
+              
+            </ul>
+
+            <div>
+                <button class="button-primary">Daftar</button>
+                <button class="button-secondary">Masuk</button>
+                <button class="button-home" href><a href="index3.html">Home</a></button>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+
+    <!-- Cart Section -->
+    <section id="blog-home" class="pt-5 mt-5 container">
+        <h2 class="font-weight-bold pt-5">Shoping Cart</h2>
+        <hr>
+    </section>
+
+    <section id="cart-container" class="container my-5 mt-2">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                    <td class="product"><img src="1.webp" alt="" width="100" height="100"></td>
+                    <td>
+                        <h5>BAJU WANITA SAKKA BLOUSE</h5>
+                    </td>
+                    <td>
+                        <h5>Rp. 120,000</h5>
+                    </td>
+                    <td><input class="w-25 pl-1" value="1" type="number"></td>
+                    <td>
+                        <h5>Rp. 120,000</h5>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                    <td class="product"><img src="https://ae01.alicdn.com/kf/H532e673d2b34452698f176f1d9a5ef78j/Baju-Wanita-Korea-Musim-Panas-Baju-Lengan-Pendek-Wanita-Blus-Baju-Sifon-Wanita-Atasan-Baju-Putih.jpg_.webp" alt="" width="100" height="100"></td>
+                    <td>
+                        <h5>BAJU WANITA CHIFFON PUTIH</h5>
+                    </td>
+                    <td>
+                        <h5>Rp. 125,000</h5>
+                    </td>
+                    <td><input class="w-25 pl-1" value="1" type="number"></td>
+                    <td>
+                        <h5>Rp. 125,000</h5>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                    <td class="product"><img src="https://lzd-img-global.slatic.net/g/p/93901395a3e00be55a9e89c37d13bda3.jpg_720x720q80.jpg_.webp" alt="" width="100" height="100"></td>
+                    <td>
+                        <h5>BLOUSE WANITA ARMY</h5>
+                    </td>
+                    <td>
+                        <h5>Rp. 50,000</h5>
+                    </td>
+                    <td><input class="w-25 pl-1" value="1" type="number"></td>
+                    <td>
+                        <h5>Rp. 50,000</h5>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-bottom" class="container">
+        <div class="row">
+            <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
+                <div>
+                    <h5>COUPON</h5>
+                    <p>Masukan kode kupon anda</p>
+                    <input type="text" placeholder="Coupon Code">
+                    <button class="btn">APPLY COUPON</button>
+                </div>
+            </div>
+            <div class="total col-lg-6 col-md-6 col-12 mb-4">
+                <div>
+                    <h5>CART TOTAL</h5>
+                    <div class="d-flex justify-content-between"></div>
+                        <h6>Subtotal</h6>
+                        <p>Rp.290,000</p>
+                    </div>
+                    <div class="d-flex justify-content-between"></div>
+                        <h6>Shipping</h6>
+                        <p>Rp.100,000</p>
+
+                        <hr class="second-hr">
+                        <div class="d-flex justify-content-between">
+                            <h6>Total</h6>
+                            <p>Rp.390,000</p>
+                        </div>
+
+                    <button class="btn">LANJUTKAN PESANAN</button>
+
+                    <style>
+                        .btn {
+                            border: none;
+                            background-color: #E90E01;
+                            color: #fff;
+                        }
+                    </style>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <section id="fitur" class="mt-5 overflow-hidden"></section>
+
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="item container">
+          <div class="row d-flex justify-between-content px-60">
+            <div class="shop col-md-2">
+              <span>
+                <h4 class="title mb-5">SHOP</h4>
+                <h5 class="mb-4"><a href="#works">How it Works</a></h5>
+                <h5 class="mb-4"><a href="#selling">Start Selling</a></h5>
+                <h5 class="mb-4"><a href="#consignment">Consignment</a></h5>
+                <h5 class="mb-4"><a href="#marketplace">Marketplace</a></h5>
+                <h5 class="mb-4"><a href="#fast">Fast Selling</a></h5>
+              </span>
+            </div>
+
+            <div class="cscare col-md-2">
+              <span>
+                <h4 class="title mb-5">CUSTOMER CARE</h4>
+                <h5 class="mb-4"><a href="#f&q">FAQ</a></h5>
+                <h5 class="mb-4"><a href="#authentity">Authenticity Promise</a></h5>
+                <h5 class="mb-4"><a href="#billing">Billing</a></h5>
+                <h5 class="mb-4"><a href="#refund">Refund</a></h5>
+                <h5 class="mb-4"><a href="#privacy">Privacy</a></h5>
+              </span>
+            </div>
+
+            <div class="company col-md-2">
+              <span>
+                <h4 class="shop mb-5">COMPANY</h4>
+                <h5 class="mb-4"><a href="#profile">Who We Are</a></h5>
+                <h5 class="mb-4"><a href="#careers">Careers</a></h5>
+                <h5 class="mb-4"><a href="#report">Fashion Impact Report</a></h5>
+              </span>
+            </div>
+
+            <div class="col-md-2">
+              <span>
+                <h4 class="title mb-4">PAYMENT</h4>
+                <div class="image">
+                  <img src="payment.png" alt="">
+                </div>
+                
+              </span>
+            </div>
+
+          </div>
+
+          <div class="footer row mt-5 mb-4">
+            <div class="footer2 col-md-7">
+              <img src="Logo.png" alt="">
+              <a href="#">cabo.id</a>
+            </div>
+            <div class="footer3 col-md-5">
+              <a href="#help">Help Centre</a>
+              <a href="#contactus">Contact Us</a>
+              <a href="#press">Press</a>
+              <a href="#job">Job</a>
+              <a href="#terms">Terms</a>
+              <a href="#privacy">Privacy</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
